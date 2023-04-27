@@ -1,10 +1,10 @@
 export const environment = {
   firebase: {
-    projectId: 'luvifrontend',
-    appId: '1:268119465307:web:42cea66a35c1d6f2b58e7e',
-    storageBucket: 'luvifrontend.appspot.com',
+    projectId: 'frontendlv8',
+    appId: '1:864569648542:web:1a6dfc2ea878ea931ca28f',
+    storageBucket: 'frontendlv8.appspot.com',
     locationId: 'southamerica-east1',
-    apiKey: 'AIzaSyCdiK4Wo2mZXlrjSQjmN6cn2hF4RsuEc6Y',
-    authDomain: 'luvifrontend.firebaseapp.com',
-    messagingSenderId: '268119465307',
+    apiKey: 'AIzaSyCy6Dq-JEtQSY_o0ZtGZL4C9DOL7gA1jns',
+    authDomain: 'frontendlv8.firebaseapp.com',
+    messagingSenderId: '864569648542',
   },};

@@ -1,0 +1,29 @@
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoap{
+    width: 160px;
+}
+img{
+    width: 40px;
+margin-right:5PX ;
+}
+.btn{
+    border-width: 2.5px ;
+}
+/*calular*/
+@media (max-width:575px){
+.conteiner{
+    flex-direction: column ;
+    margin-bottom: 20px;
+}
+.redes{
+   
+    flex-direction: column ;
+    
+}
+.redes img{
+    margin: 3px;;
+}}

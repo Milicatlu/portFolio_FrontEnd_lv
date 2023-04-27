@@ -1,0 +1,14 @@
+.row{
+    padding: 20px;
+}
+div{
+    color: #eee7e7;
+    background: black;
+    padding-bottom: 20px;
+}
+h1, h3{
+    display: inline;
+}
+.algo{
+    margin-left: 20px;
+}

@@ -1,0 +1,27 @@
+<section id="about1">
+  <div class="row">
+  <div class="col-lg-12">
+    <button  class="btn btn-light about" routerLink="/editacerde/1" *ngIf="isLogged">
+      EDITAR PERFIL
+    </button>
+  </div>
+  <br>
+  <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2" *ngIf="persona">
+    <img src={{persona.img}} alt="author image" class="img-fluid fotocv" id="profile-img">
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="name-container" *ngIf="persona">
+    <h2 id="main-name">
+      {{persona.nombre}} {{persona.apellido}}
+    </h2>
+    <p id="dev">FULL STACK WEB DEVELOPER JR</p>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="about" *ngIf="persona">
+    <span>
+      <h2 id="about-me">ACERCA DE MI</h2>
+      <p>
+        {{persona.description}}
+      </p>
+    </span>
+  </div>
+</div>
+</section>

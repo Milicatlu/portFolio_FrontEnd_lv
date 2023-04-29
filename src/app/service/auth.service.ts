@@ -9,7 +9,7 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL= 'https://backendlv.onrender.com';
+  authURL= 'https://backendlv.onrender.com/auth';
 
   constructor(private httpClient: HttpClient) { }
   public nuevo(nuevoUsuario: NuevoUsuario):Observable<any>{

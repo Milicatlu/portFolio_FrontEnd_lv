@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root',
 })
 export class EducacionService {
-  URL = 'https://backendlv.onrender.com';
+  URL = 'https://backendlv.onrender.com/educacion/';
   constructor(private httclient: HttpClient) {}
 
   public lista(): Observable<Educacion[]> {

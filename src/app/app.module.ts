@@ -32,6 +32,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +61,7 @@ import { NewproyectoComponent } from './components/proyecto/newproyecto.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,

@@ -9,12 +9,11 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./proyecto.component.css']
 })
 export class ProyectoComponent implements OnInit {
-
 proyecto: Proyecto[]=[];
 constructor(private proyectoS: ProyectoService, private tokenService: TokenService){}
 isLogged=false;
 
-ngOnInit():void {
+ngOnInit() {
   this.cargarProyecto();
   if(this.tokenService.getToken()){
     this.isLogged=true;
@@ -30,7 +29,7 @@ cargarProyecto():void {
   )
 }
 delete(id?: number){
-  if(id!=undefined){
+  if(id!==undefined){
     this.proyectoS.delete(id).subscribe(
       data=>{
         this.cargarProyecto();

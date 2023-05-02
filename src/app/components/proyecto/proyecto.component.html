@@ -11,20 +11,20 @@
       </div>
     <h1>Proyectos realizados</h1>
     <div class="conteiner">
-        <tr *ngFor="let proyecto of proyecto">
+        <div *ngFor="let proyectos of proyecto">
         <div class="col-sm-12 col-md-7 col-lg-7 explicacion">
-            <h2>{{proyecto.nombreP}}</h2>
-            <p>{{`rpyecto.descriptionP}}</p>
+            <h2>{{proyectos.nombreP}}</h2>
+            <p>{{proyectos.descriptionP}}</p>
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen" *ngIf="proyecto">
-                <img src={{proyecto.img}} alt="author image" class="img-fluid img" id="proyecto-img">
+        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 imagen" *ngIf="proyectos?.img">
+                <img src={{proyectos.img}} alt="author image" class="img-fluid img" id="proyecto-img">
               </div>
         
 <!--Hacer el editproyecto-->
         <td *ngIf="isLogged">
             <button
             type="button"
-              routerLink="/editeedu/{{proyecto.id}}"
+              routerLink="/editeedu/{{proyectos.id}}"
               class="btn btn-secondary">
               Editar <i class="bi bi-pen"></i>
             </button>
@@ -32,13 +32,13 @@
           <td *ngIf="isLogged">
             <button
               type="button"
-              (click)="delete(proyecto.id)"
+              (click)="delete(proyectos.id)"
               class="btn btn-danger"
             >
               Borrar <i class="bi bi-trash3"></i>
             </button>
           </td>  
-        </tr>
+        </div>
           </div>
     </div>
 </div>

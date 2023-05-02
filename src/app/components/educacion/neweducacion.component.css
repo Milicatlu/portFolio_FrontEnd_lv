@@ -1,0 +1,51 @@
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+  
+  /* Estilo para la fila */
+  .row {
+    display: flex; /* Utilizamos Flexbox para alinear los elementos */
+    justify-content: center; /* Alinear horizontalmente al centro */
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    width: 100%; /* Ancho del formulario al 100% del contenedor */
+    padding: 20px; /* Agregamos un poco de padding para separar del borde */
+    border: 1px solid #ccc; /* Agregamos un borde */
+    border-radius: 5px; /* Redondeamos las esquinas */
+  }
+  
+  /* Estilo para las etiquetas de los campos */
+  label {
+    display: block; /* Mostramos cada etiqueta en una línea diferente */
+    font-weight: bold; /* Agregamos negrita para destacar la etiqueta */
+    margin-bottom: 10px; /* Separación entre etiquetas y campos */
+  }
+  
+  /* Estilo para los campos */
+  input[type="text"] {
+    width: 100%; /* Ancho al 100% del contenedor */
+    padding: 10px; /* Agregamos un poco de padding para separar del borde */
+    border: 1px solid #ccc; /* Agregamos un borde */
+    border-radius: 5px; /* Redondeamos las esquinas */
+    margin-bottom: 20px; /* Separación entre campos */
+  }
+  
+  /* Estilo para el botón */
+  button[type="submit"] {
+    display: block; /* Mostramos el botón en una línea diferente */
+    margin: 0 auto; /* Centramos horizontalmente */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Agregamos un poco de padding para separar del borde */
+    border: none; /* Quitamos el borde */
+    border-radius: 5px; /* Redondeamos las esquinas */
+  }
+  
+  /* Estilo para el botón al pasar el mouse por encima */
+  button[type="submit"]:hover {
+    background-color: #0069d9; /* Cambiamos el color de fondo al pasar el mouse */
+  }

@@ -16,13 +16,14 @@ export class NewproyectoComponent {
   img:string;
 
   constructor(private proyectoS: ProyectoService, private router: Router, public imageService: ImageService,private activatedRouter: ActivatedRoute){}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   onCreate():void{
-    const educacion= new Proyecto(this.nombreP, this.descriptionP, this.img);
-    const id = this.activatedRouter.snapshot.params['id'];
+    this.proyecto= new Proyecto(this.nombreP, this.descriptionP, this.img);
+    const id = this.activatedRouter.snapshot.params['2'];
   this.proyecto.img=this.imageService.url
-    this.proyectoS.save(educacion).subscribe(
+    this.proyectoS.save(this.proyecto).subscribe(
       data=>{
         alert("Proyecto añadido correctamente");
         this.router.navigate(['']);
@@ -32,7 +33,7 @@ export class NewproyectoComponent {
       })
    }
    uploadImage($event:any) {
-    const id= this.activatedRouter.snapshot.params[2];
+    const id= this.activatedRouter.snapshot.params['2'];
     const name="proyecto_" + id;
   this.imageService.uploadImage($event, name);
   }
